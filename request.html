@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nikita Global - Обратиться</title>
+
+	<!-- Links -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Scripts -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="content">
+		<!-- header begin -->
+		<header class="ngl-header">	
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Главная</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Мои работы</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Вакансии</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Друзья и партнеры</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Обо мне</a>
+							</li>
+						</ul>
+						<form action="sender.php" class="ngl-search">
+							<button type="button" class="ngl-search__btn">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.7722 18.6726L14.8912 13.7917C16.1045 12.3328 16.8354 10.4593 16.8354 8.41797C16.8354 3.77628 13.0592 0 8.41776 0C3.77618 0 0 3.77628 0 8.41797C0 13.0593 3.77618 16.8353 8.41776 16.8353C10.459 16.8353 12.3326 16.1045 13.7915 14.8912L18.6726 19.7722C18.8244 19.9241 19.0234 20 19.2224 20C19.4214 20 19.6204 19.9241 19.7723 19.7722C20.076 19.4685 20.076 18.9763 19.7722 18.6726ZM1.55518 8.41797C1.55518 4.63381 4.6337 1.55518 8.41776 1.55518C12.2017 1.55518 15.2801 4.63381 15.2801 8.41797C15.2801 12.2018 12.2017 15.2801 8.41776 15.2801C4.6337 15.2801 1.55518 12.2018 1.55518 8.41797Z" fill="white"/>
+								</svg>
+							</button>
+							<div class="ngl-search__wrap">
+								<input class="ngl-search__field" type="text" placeholder="Поиск">
+							</div>
+						</form>
+						<a href="#" class="neon-btn active">
+							Обратиться
+						</a>
+						<div class="ngl-social">
+							<a href="#" class="ngl-social__link">
+								<svg width="20" height="20">
+									<use xlink:href="css/sprite.svg#fb"></use>
+								</svg>
+							</a>
+							<a href="#" class="ngl-social__link">
+								<svg width="20" height="20">
+									<use xlink:href="css/sprite.svg#vk"></use>
+								</svg>
+							</a>
+							<a href="#" class="ngl-social__link">
+								<svg width="20" height="20">
+									<use xlink:href="css/sprite.svg#ytb"></use>
+								</svg>
+							</a>
+							<a href="#" class="ngl-social__link">
+								<svg width="20" height="20">
+									<use xlink:href="css/sprite.svg#telegram"></use>
+								</svg>
+							</a>
+						</div>
+						<ul class="languages">
+							<li><a class="current" href="#">Рус</a></li>
+							<li><a href="#">Eng</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>			
+		</header>
+		<!-- header end -->
+		
+		<!-- main begin -->
+		<main class="main">
+			<div class="ngl-request">
+				<div class="container">
+					<form action="sender.php" class="request">
+						<div class="close-this">
+							<svg width="22" height="22">
+								<use xlink:href="css/sprite.svg#cross"></use>
+							</svg>
+						</div>
+						<div class="request__row">
+							<input class="field" id="requestName" type="text" placeholder="Имя">
+							<input class="field" id="requestSurname" type="text" placeholder="Фамилия">
+							<input class="field" id="requestEmail" type="email" placeholder="Эл. почта">
+						</div>
+						<div class="request__row">
+							<textarea placeholder="Написать ..."></textarea>
+						</div>
+						<div class="request__footer">
+							<div class="choice">
+								<input id="agreement" type="checkbox">					
+								<label class="text" for="agreement">
+									<span class="choice__square">
+										<svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 6L5.5 15L13 1" stroke="black"/>
+										</svg>
+									</span>
+									<span>
+										Согласен с вышеуказанными правилами обработки личных данных
+									</span>
+								</label>
+							</div>
+							<button class="button request__btn" type="button">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<!-- main end -->
+
+		<!-- footer begin -->
+		<footer class="ngl-footer">
+			<div class="container">
+				<div class="bottom-menu">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="">
+					</a>
+					<ul class="bottom-menu__nav">
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Мои работы</a>
+						</li>
+						<li>
+							<a href="#">Вакансии</a>
+						</li>
+						<li>
+							<a href="#">Друзья и партнеры</a>
+						</li>
+						<li>
+							<a href="#">Обо мне</a>
+						</li>
+					</ul>
+					<div class="ngl-social">
+						<a href="#" class="ngl-social__link">
+							<svg width="30" height="30">
+								<use xlink:href="css/sprite.svg#fb"></use>
+							</svg>
+						</a>
+						<a href="#" class="ngl-social__link">
+							<svg width="30" height="30">
+								<use xlink:href="css/sprite.svg#vk"></use>
+							</svg>
+						</a>
+						<a href="#" class="ngl-social__link">
+							<svg width="30" height="30">
+								<use xlink:href="css/sprite.svg#ytb"></use>
+							</svg>
+						</a>
+						<a href="#" class="ngl-social__link">
+							<svg width="30" height="30">
+								<use xlink:href="css/sprite.svg#telegram"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="political">
+					<a href="#">Политика конфиденциальности</a>
+					<a href="#">О компании</a>
+				</div>
+
+			</div>
+		</footer>
+		<!-- footer end -->
+
+	</div>
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+</body>
+</html>
