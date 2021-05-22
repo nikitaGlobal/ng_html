@@ -1,0 +1,19 @@
+form.request.popup(action='sender.php')
+	.close-this
+		svg(width='22' height='22')
+			use(xlink:href='css/sprite.svg#cross')
+	div(class='request__row')
+		input#requestName.field(type='text' placeholder='Имя')
+		input#requestSurname.field(type='text' placeholder='Фамилия')
+		input#requestEmail.field(type='email' placeholder='Эл. почта')
+	div(class='request__row')
+		textarea(placeholder='Написать ...')
+	div(class='request__footer')
+		.choice
+			input#agreement(type='checkbox')
+			label.text(for='agreement')
+				span(class='choice__square')
+					svg(width='14' height='17' viewBox='0 0 14 17' fill='none' xmlns='http://www.w3.org/2000/svg')
+						path(d='M1 6L5.5 15L13 1' stroke='black')
+				span Согласен с вышеуказанными правилами обработки личных данных
+			button(class='button request__btn' type='button') Отправить
