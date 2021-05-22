@@ -22,10 +22,12 @@ $(document).ready(function () {
 
 
 	$(document).mouseup(function (e){ // событие клика по веб-документу
-		var div = $(".popup"); // тут указываем ID элемента
+		var div = $(".popup"),
+			toggler = $(".request-toggler") // тут указываем ID элемента
 		if (!div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+		    && !toggler.is(e.target) && div.has(e.target).length == 0) { // и не по его дочерним элементам
 			div.fadeOut();
+			$('.overlay').fadeOut()
 			$('.request-toggler').removeClass('active') // скрываем его
 		}
 	});
@@ -47,6 +49,7 @@ $(document).ready(function () {
 	$('.request-toggler').bind('click', function() {
 		$('.request').fadeToggle()
 		$(this).toggleClass('active')
+		$('.overlay').fadeToggle()
 	})
 
 	// Popup close
@@ -54,6 +57,7 @@ $(document).ready(function () {
 	$('.close-this').bind('click', function() {
 		$(this).parents('.popup').fadeOut()
 		$('.request-toggler').removeClass('active')
+		$('.overlay').fadeOut()
 	})
 
 	// 
@@ -64,6 +68,17 @@ $(document).ready(function () {
 			$(this).siblings('.button').prop("disabled", false)
 		}
 	})
+
+	// Swiper
+
+  var swiper = new Swiper('.swiper-container', {
+  	navigation: {
+  	nextEl: '.swiper-button-next',
+  	prevEl: '.swiper-button-prev',
+  	},
+  });
+
+  $(document).find('svg').addClass('svg-icon')
 
 
 });

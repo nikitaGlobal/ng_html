@@ -1,0 +1,25 @@
+section.ngl-breadcrumbs
+	.container
+		.ngl-breadcrumbs__head
+			.ngl-breadcrumbs__pagination
+				a(href="#") Мои Работы
+				a(href="#") Сайт “Шоколадные конфеты ручной работы”
+			p.ngl-tag.text #програмист#фриланс#оплата
+section.works-slider
+	.container
+		.swiper-container
+			.swiper-wrapper
+				.swiper-slide
+					img(src="img/present-work/my-work.jpg")
+				.swiper-slide
+					img(src="img/present-work/my-work.jpg")
+				.swiper-slide
+					img(src="img/present-work/my-work.jpg")
+				
+			.swiper-button-next
+				svg(width='40' height='40')
+					use(xlink:href='css/sprite.svg#arrowNext')
+			.swiper-button-prev
+				svg(width='40' height='40')
+					use(xlink:href='css/sprite.svg#arrowPrev')
+
