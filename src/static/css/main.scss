@@ -361,7 +361,7 @@ dl, ol, ul {
   padding-bottom: 80px;
   @media screen and (max-width: $lg) {
   	padding-top: 130px;
-  	padding-bottom: 40px;
+  	padding-bottom: 65px;
   }
 }
 
@@ -1034,6 +1034,12 @@ h3 {
 	color: #FFFFFF;
 	width: 828px;
 	margin-bottom: 40px;
+	@media screen and (max-width: $md) {
+		width: auto;
+		font-size: 20px;
+		line-height: 120%;
+		margin-bottom: 20px;
+	}
 }
 
 // Article
@@ -1047,6 +1053,16 @@ h3 {
 	align-items: center;
 	justify-content: space-between;
 	color: white;
+
+	@media screen and (max-width: $md) {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	@media screen and (max-width: $sm2) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 .ngl-article__date {
@@ -1054,6 +1070,12 @@ h3 {
 	font-size: 20px;
 	line-height: 23px;
 	text-transform: uppercase;
+
+	@media screen and (max-width: $sm2) {
+		font-size: 16px;
+		line-height: 18px;
+		margin-bottom: 10px;
+	}
 
 }
 
@@ -1074,10 +1096,17 @@ h3 {
 		list-style-position: outside;
 		width: 657px;
 		margin: 0 auto;
+		@media screen and (max-width: $lg) {
+			width: 100%;
+			list-style-position: inside;
+		}
 	}
 
 	li {
 		margin-bottom: 20px;
+		@media screen and (max-width: $md) {
+			margin-bottom: 10px;
+		}
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -1100,6 +1129,10 @@ h3 {
 
 	.similar {
 		width: 427px;
+		@media screen and (max-width: $lg) {
+			width: 100%;
+			margin-bottom: 30px;
+		}
 	}
 
 	.ngl-news__item {
@@ -1116,6 +1149,9 @@ h3 {
 		width: 825px;
 		font-size: 14px;
 		line-height: 19px;
+		@media screen and (max-width: $md) {
+			width: auto;
+		}
 	}
 }
 
@@ -1124,15 +1160,27 @@ h3 {
 	height: 1px;
 	background: white;
 	margin-top: 70px;
+
+	@media screen and (max-width: $md) {
+		margin-top: 30px;
+	}
 }
 
 .ngl-article__footer {
 	margin-top: 61px;
 	display: flex;
+
+	@media screen and (max-width: $md) {
+		display: block;
+		margin-top: 20px;
+	}
 }
 
 .ngl-article__comment {
 	width: 634px;
+	@media screen and (max-width: $md) {
+		width: 100%;
+	}
 	p {
 		font-weight: 500;
 		font-size: 20px;
@@ -1145,6 +1193,9 @@ h3 {
 		height: 130px;
 		width: 100%;
 		margin-bottom: 31px;
+		@media screen and (max-width: $md) {
+			margin-bottom: 15px;
+		}
 	}
 
 	.button {
@@ -1160,11 +1211,20 @@ h3 {
 		letter-spacing: normal;
 		background: #7BF7FF;
 		color: black;
+		@media screen and (max-width: $md) {
+			width: 200px;
+			height: 40px;
+		}
 	}
 }
 
 .ngl-article__share {
 	margin-left: 61px;
+
+	@media screen and (max-width: $md) {
+		margin-left: 0;
+		margin-top: 20px;
+	}
 
 	.text {
 		color: white;
@@ -1197,12 +1257,26 @@ h3 {
 .pictures {
 	margin-bottom: 50px;
 	display: flex;
+	@media screen and (max-width: $md) {
+		margin-bottom: 25px;
+	}
+	@media screen and (max-width: $lg) {
+		flex-direction: column-reverse;
+	}
 	.pictures__block {
 		height: 350px;
 		background: #C4C4C4;
+		@media screen and (max-width: $md) {
+			height: 230px;
+		}
 		&:first-child {
 			width: 350px;
 			margin-right: 30px;
+			@media screen and (max-width: $lg) {
+				margin-right: 0;
+				margin-top: 30px;
+				width: 100%;
+			}
 		}
 		&:last-child {
 			width: 540px;
@@ -1214,6 +1288,9 @@ h3 {
 	p {
 		line-height: 16px;
 		margin-bottom: 16px;
+		@media screen and (max-width: $md) {
+			margin-bottom: 10px;
+		}
 	}
 
 	.container {
@@ -1222,6 +1299,9 @@ h3 {
 	}
 	h3 {
 		margin-bottom: 66px;
+		@media screen and (max-width: $md) {
+			margin-bottom: 33px;
+		}
 	}
 
 	.container:after {
@@ -1235,6 +1315,9 @@ h3 {
 		border: 1px solid white;
 		border-left: 0;
 		border-bottom: 0;
+		@media screen and (max-width: $md) {
+			display: none;
+		}
 	}
 
 	.container:before {
@@ -1248,6 +1331,9 @@ h3 {
 		border: 1px solid white;
 		border-right: 0;
 		border-top: 0;
+		@media screen and (max-width: $md) {
+			display: none;
+		}
 	}
 }
 
@@ -1256,11 +1342,20 @@ h3 {
 	margin-top: 33px;
 	float: right;
 	width: 448px;
+	@media screen and (max-width: $lg) {
+		// width: 100%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.pictures__block {
 		background: #C4C4C4;
 		&:first-child {
 			height: 494px;
 			margin-bottom: 30px;
+			@media screen and (max-width: $md) {
+				height: 200px;
+			}
 		}
 		&:last-child {
 			height: 256px;
@@ -1271,11 +1366,31 @@ h3 {
 .content-zone__text {
 	float: left;
 	width: 573px;
+	@media screen and (max-width: $lg) {
+		width: 100%;
+		float: none;
+	}
+}
+
+.float-right {
+	@media screen and (max-width: $lg) {
+		float: none !important;
+	}
+}
+
+.float-left {
+	@media screen and (max-width: $lg) {
+		float: none !important;
+	}
 }
 
 .content-zone__mark {
 	padding-left: 99px;
 	margin-top: 35px;
+	@media screen and (max-width: $lg) {
+		padding-left: 0;
+		margin-top: 0;
+	}
 }
 
 .content-zone__inner {
@@ -1290,20 +1405,35 @@ h3 {
 .full-article {
 	.content-zone__text {
 		width: 498px;
+		@media screen and (max-width: $lg) {
+			width: 100%;
+		}
 	}
 
 	.ngl-article__info {
 		margin-bottom: 0;
+		@media screen and (max-width: $sm2) {
+			padding-bottom: 10px;
+		}
 	}
 
 	h4 {
 		margin-top: 53px;
+		@media screen and (max-width: $lg) {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-size: 18px;
+			line-height: 20px;
+		}
 	}
 
 	.ngl-article__block:nth-of-type(2) {
 		margin-top: 33px;
 		.content-zone__text {
 			width: 636px;
+			@media screen and (max-width: $lg) {
+				width: 100%;
+			}
 		}
 	}
 }
@@ -1318,17 +1448,33 @@ h3 {
 		.text {
 			line-height: 16px;
 		}
+
+		@media screen and (max-width: $sm2) {
+			display: block;
+		}
+	}
+
+	.ngl-news__info {
+		@media screen and (max-width: $sm2) {
+			margin-top: 15px;
+		}
 	}
 
 	.similar__header {
 		display: flex;
 		justify-content: space-between;
+		@media screen and (max-width: $sm2) {
+			flex-direction: column;
+		}
 
 	}
 
 	.ngl-news__item {
 		flex-direction: column;
 		padding: 25px 22px 20px;
+		@media screen and (max-width: $sm2) {
+			padding: 15px;
+		}
 	}
 	.ngl-news__picture {
 		width: 117px;
@@ -1344,6 +1490,13 @@ h3 {
 		text-transform: uppercase;
 		width: 247px;
 		height: 92px;
+		@media screen and (max-width: $sm2) {
+			width: 100%;
+			height: auto;
+			margin: 10px 0;
+			font-size: 18px;
+			line-height: 20px;
+		}
 	}
 
 	.head {
@@ -1358,6 +1511,11 @@ h3 {
 	margin-top: 45px;
 	margin-bottom: 122px;
 	height: 241px;
+	@media screen and (max-width: $lg) {
+		margin-bottom: 40px;
+		margin-top: 40px;
+		height: auto;
+	}
 }
 
 // Friends
@@ -1425,6 +1583,9 @@ h3 {
 .vacancies {
 	.title {
 		margin-bottom: 60px;
+		@media screen and (max-width: $lg) {
+			margin-bottom: 40px;
+		}
 	}
 }
 
@@ -1432,22 +1593,51 @@ h3 {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
+	@media screen and (max-width: $lg) {
+		flex-direction: column;
+	}
 }
 
 .vacancies__main {
 	width: 728px;
+	@media screen and (max-width: $lg) {
+		width: 100%;
+	}
+}
+
+.sidebar__links {
+	@media screen and (max-width: $lg) {
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	a {
+		@media screen and (max-width: $lg) {
+			margin-right: 15px;
+			margin-bottom: 15px;
+
+		}
+	}
+
+
 }
 
 .sidebar {
 	padding-top: 9px;
 	color: white;
 	width: 320px;
+	@media screen and (max-width: $lg) {
+		width: 100%;
+	}
 	.sidebar__heading {
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 21px;
 		text-transform: uppercase;
 		margin-bottom: 39px;
+		@media screen and (max-width: $lg) {
+			margin-bottom: 15px;
+		}
 	}
 
 	a {
@@ -1496,10 +1686,17 @@ h3 {
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 95px 30px;
 
+	@media screen and (max-width: $md) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
 	li {
 		height: 256px;
 		background: white;
 		display: block;
+		@media screen and (max-width: $md) {
+			height: auto;
+		}
 	}
 
 	.vacancies__head {
@@ -1508,6 +1705,12 @@ h3 {
 		padding-top: 25px;
 		padding-right: 23px;
 		text-align: right;
+		
+		@media screen and (max-width: $xs) {
+			flex-direction: column;
+			padding-left: 23px;
+			text-align: left;
+		}
 	}
 
 	.vacancies__icon {
@@ -1518,6 +1721,10 @@ h3 {
 		width: 138px;
 		height: 130px;
 		margin-top: -85px;
+		@media screen and (max-width: $xs) {
+			align-self: center;
+			margin-bottom: 15px;
+		}
 	}
 
 	.heading {
@@ -1526,6 +1733,9 @@ h3 {
 		line-height: 21px;
 		text-transform: uppercase;
 		margin-bottom: 19px;
+		@media screen and (max-width: $xs) {
+			margin-bottom: 10px;
+		}
 	}
 
 	.salary {
@@ -1563,13 +1773,32 @@ h3 {
 
 .about-vacancy {
 	display: block;
+
+	.vacancies__day {
+		@media screen and (max-width: $xs) {
+			margin-bottom: 10px;
+		}
+	}
 	.vacancies__notes {
 		display: flex;
 		flex-direction: column-reverse;
 		margin-left: auto;
+		@media screen and (max-width: $md) {
+			width: 100%;
+			display: flex;
+			align-items: flex-end;
+			margin-top: 15px;
+		}
+
+		@media screen and (max-width: $xs) {
+			align-items: flex-start;
+		}
 	}
 	li {
 		height: 667px;
+		@media screen and (max-width: $lg) {
+			height: auto;
+		}
 	}
 
 	.vacancies__description .text {
@@ -1580,18 +1809,49 @@ h3 {
 		padding-top: 35px;
 		padding-right: 94px;
 		justify-content: flex-start;
+		@media screen and (max-width: $sm) {
+			padding-right: 20px;
+		}
+
+		@media screen and (max-width: $md) {
+			flex-wrap: wrap;
+		}
 	}
 
 	.vacancies__info {
 		margin-left: 56px;
+		@media screen and (max-width: $md) {
+			margin-left: auto;
+		}
+
+		@media screen and (max-width: $xs) {
+			margin-right: auto;
+			margin-left: 0;
+		}
 	}
 
 	.vacancies__description {
 		padding: 51px 94px 106px 94px;
+		@media screen and (max-width: $lg) {
+			padding: 51px 94px;
+		}
+
+		@media screen and (max-width: $sm) {
+			padding: 20px;
+		}
 		.text {
 			margin-bottom: 16px;
+
+
+			@media screen and (max-width: $md) {
+				margin-bottom: 10px;
+			}
+
 			&:last-child {
 				margin-bottom: 0;
+				@media screen and (max-width: $md) {
+					margin-bottom: 0;
+				}
 			}
 		}
 
@@ -1599,6 +1859,9 @@ h3 {
 
 	.block {
 		margin-bottom: 33px;
+		@media screen and (max-width: $md) {
+			margin-bottom: 15px;
+		}
 	}
 
 	.subtitle {
@@ -1968,4 +2231,10 @@ h3 {
 		margin-left: 45px;
 	}
 	
+}
+
+.full-article__image {
+	@media screen and (max-width: $lg) {
+		margin-top: 20px;
+	}
 }
