@@ -2065,6 +2065,9 @@ h3 {
 	.title {
 		color: white;
 		margin-bottom: 338px;
+		@media screen and (max-width: $lg) {
+			margin-bottom: 40px;
+		}
 	}
 	h3 {
 		color: black;
@@ -2082,6 +2085,15 @@ h3 {
 	height: 1338px;
 	padding-left: 102px;
 
+	@media screen and (max-width: $lg) {
+		padding: 30px 50px;
+		height: auto;
+	}
+
+	@media screen and (max-width: $sm) {
+		padding: 20px;
+	}
+
 	h4 {
 		color: black;
 		font-weight: bold;
@@ -2089,6 +2101,9 @@ h3 {
 		line-height: 19px;
 		margin-bottom: 36px;
 		display: inline-block;
+		@media screen and (max-width: $lg) {
+			margin-bottom: 15px;
+		}
 	}
 
 
@@ -2115,7 +2130,11 @@ h3 {
 		font-size: 14px;
 		line-height: 16px;
 		margin-top: 35px;
-	}	
+	}
+
+	@media screen and (max-width: $lg) {
+		margin-top: 20px;
+	}
 }
 
 .overlay {
@@ -2134,6 +2153,14 @@ h3 {
 	display: flex;
 	position: relative;
 	height: 375px;
+	@media screen and (max-width: $lg) {
+		height: unset;
+		align-items: flex-start;
+	}
+
+	@media screen and (max-width: $sm) {
+		flex-direction: column;
+	}
 	img {
 		width: 538px;
 		height: 626px;
@@ -2141,24 +2168,47 @@ h3 {
 		position: relative;
 		z-index: 2;
 
+		@media screen and (max-width: $lg) {
+			width: 250px;
+			height: unset;
+			margin-top: 0;
+		}
+
+		@media screen and (max-width: $sm) {
+			margin: 0 auto;
+		}
+
 	}
 }
 
 .about__details {
-	width: 616px;
-	height: 584px;
-	border: 1px solid #7BF7FF;
-	flex-shrink: 0;
-	padding: 73px 56px;
-	margin-top: -325px;
-	padding-left: 317px;
-	margin-left: -253px;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	z-index: 1;
+	margin-left: 30px;
+
+	@media screen and (max-width: $sm) {
+		margin-left: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	@media screen and (min-width: $lg) {
+		width: 616px;
+		height: 584px;
+		border: 1px solid #7BF7FF;
+		flex-shrink: 0;
+		padding: 73px 56px;
+		margin-top: -325px;
+		padding-left: 317px;
+		margin-left: -253px;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 1;
+	}
 	h3 {
 		color: white;
+		@media screen and (max-width: $lg) {
+			color: black;
+		}
 	}
 	p {
 		font-size: 14px;
@@ -2168,23 +2218,42 @@ h3 {
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+		@media screen and (max-width: $lg) {
+			color: black;
+		}
 	}
 }
 
 .about__content {
 	display: flex;
 	margin-top: 56px;
+
+	@media screen and (max-width: $lg) {
+		flex-direction: column;
+		margin-top: 10px;
+	}
 	p {
 		margin-bottom: 16px;
 		font-size: 14px;
 		line-height: 16px;
 		&:last-of-type {
 			margin-bottom: 0;
+			@media screen and (max-width: $lg) {
+				margin-bottom: 0;
+			}
+		}
+
+		@media screen and (max-width: $lg) {
+			margin-bottom: 10px;
 		}
 	}
 
 	.about__group {
 		margin-bottom: 42px;
+		@media screen and (max-width: $lg) {
+			margin-bottom: 20px;
+		}
 	}
 
 	ul {
@@ -2196,18 +2265,37 @@ h3 {
 	}
 
 	.about__column {
+
+		@media screen and (max-width: $lg) {
+			margin-bottom: 20px;
+		}
 		&:first-child {
 			width: 235px;
+			@media screen and (max-width: $lg) {
+				width: 100%;
+			}
 		}
 		&:nth-child(2) {
 			width: 253px;
 			margin-left: 50px;
+			@media screen and (max-width: $lg) {
+				width: 100%;
+				margin-left: 0;
+			}
 		}
 
 		&:last-child {
 			width: 318px;
 			margin-left: 64px;
 			margin-top: -116px;
+			@media screen and (max-width: $lg) {
+				width: 100%;
+				margin: 0;
+			}
+
+			@media screen and (max-width: $lg) {
+				margin-bottom: 0;
+			}
 		}
 	}
 }
@@ -2217,11 +2305,18 @@ h3 {
 	img {
 		width: 222px;
 		height: 313px;
+		@media screen and (max-width: $xs) {
+			height: auto;
+		}
 	}
 
 	.cerificates__inner {
 		display: flex;
 		align-items: flex-start;
+
+		@media screen and (max-width: $md) {
+			flex-direction: column;
+		}
 	}
 
 	.pic {
@@ -2229,6 +2324,14 @@ h3 {
 		height: 178px;
 		background: #C4C4C4;
 		margin-left: 45px;
+		@media screen and (max-width: $md) {
+			margin-left: 0;
+			margin-top: 20px;
+		}
+
+		@media screen and (max-width: $xs) {
+			width: 100%;
+		}
 	}
 	
 }
