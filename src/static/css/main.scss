@@ -1,6 +1,14 @@
 @import "import/reset";
 @import "import/fonts";
 
+
+// Vars
+$xxs: 320px;
+$xs: 375px;
+$sm: 768px;
+$md: 991px;
+$lg: 1199px;
+
 /* Global */
 
 body {
@@ -69,6 +77,48 @@ dl, ol, ul {
 	font-size: 12px;
 	padding: 14px 0;
 
+	@media screen and (max-width: $lg) {
+		padding: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background: #2a2a2e;
+		z-index: 50;
+	}
+
+}
+
+.navbar-collapse {
+	@media screen and (max-width: $lg) {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		top: 73px;
+		left: 0;
+		background: #2a2a2e;
+		z-index: 60;
+		display: flex;
+		flex-direction: column;
+		// justify-content: center;
+	}
+}
+
+.navbar-nav {
+
+	@media screen and (max-width: $lg) {
+		width: 300px;
+		margin: 0 auto;
+		margin-top: 70px;
+	}
+
+	@media screen and (max-width: $xs) {
+		width: 95%;
+	}
+
+}
+
+.ngl-search__btn {
+	padding: 0;
 }
 
 .navbar-brand {
@@ -103,6 +153,10 @@ dl, ol, ul {
 
 	&.active:after {
 		width: calc(100% + 18px);
+		@media screen and (max-width: $lg) {
+			width: 100%;
+			left: 0;
+		}
 	}
 
 	&:hover {
@@ -110,15 +164,21 @@ dl, ol, ul {
 
 		&:after {
 			width: calc(100% + 18px);
+			@media screen and (max-width: $lg) {
+				width: 100%;
+				left: 0;
+			}
 		}
 	}
+
+	
 }
 
 .navbar-brand {
 	margin-right: 79px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-expand-xl .navbar-nav .nav-link {
 	padding: 0;
 }
 
@@ -128,11 +188,33 @@ dl, ol, ul {
 	&:last-child {
 		margin-right: 0;
 	}
+
+	@media screen and (max-width: $lg) {
+		margin-right: 0;
+		height: 35px;
+	}
+
+	
 }
 
 .ngl-search {
 	position: relative;
 	margin-right: 39px;
+
+	@media screen and (max-width: $lg) {
+		display: flex;
+		width: 300px;
+		margin-right: 0;
+		justify-content: space-between;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	@media screen and (max-width: $xxs) {
+		width: 95%;
+	}
+
+
 }
 
 .ngl-search__field {
@@ -140,6 +222,15 @@ dl, ol, ul {
 	height: 54px;
 	background: #DADDFF;
 	padding: 0 77px 0 24px;
+	@media screen and (max-width: $lg) {
+		width: 250px;
+		height: 40px;
+	}
+
+	@media screen and (max-width: $xxs) {
+		width: 230px;
+		height: 40px;
+	}
 }
 
 .ngl-search__wrap {
@@ -147,6 +238,12 @@ dl, ol, ul {
 	right: -10px;
 	top: 40px;
 	display: none;
+	@media screen and (max-width: $lg) {
+		position: relative;
+		display: block !important;
+		right: 0;
+		top: 0;
+	}
 }
 
 .navbar {
@@ -162,6 +259,9 @@ dl, ol, ul {
 	position: absolute;
 	top: -9px;
 	right: 0;
+	@media screen and (max-width: $lg) {
+		display: none;
+	}
 }
 
 .neon-btn {
@@ -203,6 +303,10 @@ dl, ol, ul {
 .ngl-header .ngl-social {
 	margin-left: 39px;
 	margin-right: 31px;
+	@media screen and (max-width: $lg) {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
 }
 
 .ngl-social {
@@ -254,6 +358,10 @@ dl, ol, ul {
   background-position: top left -280px;
   padding-top: 100px;
   padding-bottom: 80px;
+  @media screen and (max-width: $lg) {
+  	padding-top: 130px;
+  	padding-bottom: 40px;
+  }
 }
 
 /* Ngl-blog */
@@ -264,10 +372,24 @@ dl, ol, ul {
 	font-size: 40px;
 	line-height: 40px;
 	text-transform: uppercase;
+
+	@media screen and (max-width: $sm) {
+		font-size: 25px;
+		line-height: 25px;
+	}
+
+	@media screen and (max-width: $xs) {
+		font-size: 20px;
+		line-height: 20px;
+	}
 }
 
 .ngl-blog .title {
 	margin-bottom: 56px;
+
+	@media screen and (max-width: $sm) {
+		margin-bottom: 30px;
+	}
 }
 
 .ngl-news__item {
@@ -301,6 +423,17 @@ dl, ol, ul {
 	&:last-child {
 		margin-bottom: 0;
 	}
+
+	@media screen and (max-width: $md) {
+		height: auto;
+		padding-top: 35px;
+		flex-direction: column;
+	}
+
+	@media screen and (max-width: $xs) {
+		padding: 10px;
+		padding-top: 35px;
+	}
 }
 
 .ngl-news__picture {
@@ -311,6 +444,23 @@ dl, ol, ul {
 	width: 255px;
 	margin-right: 59px;
 	height: 134px;
+	img {
+		@media screen and (max-width: $md) {
+			height: 100%;
+		}
+	}
+
+	@media screen and (max-width: $md) {
+		font-size: 18px;
+		line-height: 20px;
+		width: 300px;
+		margin-right: 30px;
+		height: 100px;
+	}
+
+	@media screen and (max-width: $xs) {
+		width: 100%;
+	}
 }
 
 .ngl-news__main {
@@ -330,6 +480,10 @@ dl, ol, ul {
 .ngl-news__main > .text {
 	width: 629px;
 	margin-bottom: 16px;
+
+	@media screen and (max-width: $md) {
+		width: auto;
+	}
 }
 
 .ngl-news .text:last-of-type, .ngl-news__tags {
@@ -340,6 +494,9 @@ dl, ol, ul {
 	display: flex;
 	margin-top: 24px;
 	justify-content: space-between;
+	@media screen and (max-width: $xs) {
+		flex-direction: column;
+	}
 }
 
 .ngl-news__counter {
@@ -349,6 +506,9 @@ dl, ol, ul {
 .ngl-news__info {
 	display: flex;
 	align-items: center;
+	@media screen and (max-width: $xs) {
+		margin-top: 10px;
+	}
 }
 
 .ngl-news__function:last-child {
@@ -362,6 +522,14 @@ dl, ol, ul {
 
 	span {
 		font-size: 24px;
+		@media screen and (max-width: $md) {
+			font-size: 20px;
+		}
+	}
+
+	@media screen and (max-width: $md) {
+		top: 10px;
+		right: 10px;
 	}
 }
 
@@ -394,6 +562,14 @@ dl, ol, ul {
 
 .ngl-news .subtitle {
 	margin-bottom: 21px;
+	@media screen and (max-width: $md) {
+		margin-bottom: 15px;
+		margin-top: 15px;
+		width: 100%;
+		height: auto;
+		font-size: 18px;
+		line-height: 20px;
+	}
 }
 
 .nav-links {
@@ -433,6 +609,11 @@ dl, ol, ul {
 	align-items: center;
 	justify-content: flex-end;
 	margin-top: 70px;
+
+	@media screen and (max-width: $lg) {
+		margin-top: 30px;
+	}
+
 }
 
 .navigation__arrow {
@@ -447,6 +628,10 @@ dl, ol, ul {
 	font-size: 12px;
 	line-height: 13px;
 	font-family: "PT Mono";
+	@media screen and (max-width: $lg) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 }
 
 .bottom-menu {
@@ -454,11 +639,30 @@ dl, ol, ul {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 72px;
+	@media screen and (max-width: $lg) {
+		flex-direction: column;
+		margin-bottom: 40px;
+	}
 }
 
 .bottom-menu__nav {
 	display: flex;
 	align-items: center;
+	@media screen and (max-width: $lg) {
+		margin: 30px 0;
+	}
+
+	@media screen and (max-width: $sm) {
+		display: none;
+	}
+}
+
+.ngl-footer {
+	.ngl-social {
+		@media screen and (max-width: $sm) {
+			margin-top: 15px;
+		}
+	}
 }
 
 .ngl-footer a {
@@ -498,6 +702,15 @@ dl, ol, ul {
 		&:last-child {
 			margin-right: 0;
 		}
+
+		@media screen and (max-width: $xs) {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+	}
+
+	@media screen and (max-width: $xs) {
+		flex-direction: column;
 	}
 }
 
@@ -514,10 +727,32 @@ dl, ol, ul {
 	transform: translate(-50%, -50%);
 	display: none;
 	z-index: 100;
+
+	@media screen and (max-width: $lg) {
+		width: 80%;
+		padding: 30px;
+		padding-top: 50px;
+	}
+
+	@media screen and (max-width: $sm) {
+		padding: 20px;
+		padding-top: 50px;
+		width: 90%;
+	}
 }
+
 
 .request__btn {
 	margin-left: auto;
+
+	@media screen and (max-width: $sm ) {
+		margin-top: 10px;
+	}
+
+	@media screen and (max-width: $xs ) {
+		width: 100%;
+	}
+
 }
 .request__footer {
 	label {
@@ -537,6 +772,11 @@ dl, ol, ul {
 	&:hover {
 		transform: scale(1.2);
 	}
+
+	@media screen and (max-width: $lg) {
+		top: 10px;
+		right: 10px;
+	}
 }
 
 
@@ -547,6 +787,9 @@ dl, ol, ul {
 	padding: 0 25px;
 	font-size: 16px;
 	line-height: 19px;
+	@media screen and (max-width: $sm) {
+		height: 40px;
+	}
 }
 
 textarea {
@@ -557,6 +800,10 @@ textarea {
 	resize: none;
 	width: 100%;
 	height: 172px;
+
+	@media screen and (max-width: $sm) {
+		height: 110px;
+	}
 }
 
 .request__row {
@@ -568,6 +815,48 @@ textarea {
 	.field:nth-child(3) {
 		width: 349px;
 	}
+
+	.field {
+		@media screen and (max-width: $lg) {
+			&:nth-child(1) {
+				width: 48%;
+				margin-bottom: 20px;
+			}
+
+			&:nth-child(2) {
+				width: 48%;
+				margin-bottom: 20px;
+			}
+
+			&:nth-child(3) {
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: $sm) {
+			margin-bottom: 10px;
+			&:nth-child(1) {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+
+			&:nth-child(2) {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+
+		}
+	}
+
+	@media screen and (max-width: $lg) {
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+
+	@media screen and (max-width: $sm) {
+		margin-bottom: 10px;
+		flex-direction: column;
+	}
 }
 
 .choice {
@@ -575,6 +864,10 @@ textarea {
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
+
+	@media screen and (max-width: $sm) {
+		flex-direction: column;
+	}
 }
 
 .choice__square {
@@ -585,6 +878,7 @@ textarea {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-shrink: 0;
 
 	svg {
 		opacity: 0;
@@ -631,6 +925,17 @@ label {
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	color: #000000;
+
+	@media screen and (max-width: $sm) {
+		width: 230px;
+		height: 45px;
+		font-size: 15px;
+		letter-spacing: 0.05em;
+	}
+
+	@media screen and (max-width: $xs) {
+		width: 100%;
+	}
 }
 
 .field.invalid {
@@ -1410,14 +1715,14 @@ h3 {
 
 .overlay {
 	width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: black;
-    z-index: 70;
-    opacity: 0.7;
-    display: none;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: black;
+	z-index: 70;
+	opacity: 0.7;
+	display: none;
 }
 
 .about__head {
