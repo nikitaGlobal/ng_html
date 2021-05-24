@@ -1,9 +1,28 @@
-section.ngl-breadcrumbs
+.ngl-breadcrumbs
 	.container
-		.ngl-breadcrumbs__pagination
-			a(href="#") Главная
-			a(href="#") Как заказывать сайт программисту
-section.ngl-article.full-article
+		ul.ngl-breadcrumbs__pagination(itemscope itemtype="https://schema.org/BreadcrumbList")
+			li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+				a(href="/" itemprop="item")
+					span(itemprop="name") Главная
+					meta(itemprop="position" content="0")
+			li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+				a(href="#" itemprop="item")
+					span(itemprop="name") Как заказывать сайт программисту
+					meta(itemprop="position" content="1")
+section.ngl-article.full-article(itemscope itemtype="https://schema.org/Article")
+	link(itemprop='mainEntityOfPage' href='/')
+	link(itemprop='image' href='img/article/article_main.jpg')
+	meta(itemprop='headline name' content='Как заказывать сайт программисту')
+	meta(itemprop='description' content='Работа с разработчиками, советы на основе моего опыта в качестве этого самого программиста, имеющего опыт в т.ч. фриланса.')
+	meta(itemprop="author" content="Никита Меншутин")
+	meta(itemprop="datePublished" datetime="2021-05-02" content="2021-05-02")
+	meta(itemprop="dateModified" datetime="2021-05-02" content="2021-05-02")
+	div(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+		div(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+			img(itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;")
+		meta(itemprop="name" content="Nikita Global")
+		meta(itemprop="telephone" content="")
+		meta(itemprop="address" content="Россия")
 	.container
 		.content-zone
 			h3 Как заказывать сайт программисту
@@ -19,14 +38,14 @@ section.ngl-article.full-article
 						li Естественно,  смотрите с кем работаете – отзывы в интернете, отзывы знакомых, коллег, партнеров кто с ним уже работал. Смотрите примеры работ, попросите знающего человека оценить качество.
 						li Обезопасьте себя с помощью служб “Сделка без риска”, “Арбитраж сделки” и подобных – это все несложно, есть у многих платежных систем и на фриланс биржах. Также есть как самостоятельная услуга в интернете. В англоязычном интернете эта услуга называется “Escrow”, в “традиционных” сделках эта форма оплаты называется “аккредитив”. Работайте по предоплате, если уже сформировались деловые отношения, хотя все же лучше продолжать через сделку без риска.
 						li Сроки – закладывайте с запасом. Проблема многих программистов, особенно тех, кто работает удаленно – неправильное определение сроков. Может случиться форсмажор, можно что-то не учесть. в конце концов исполнитель может подвести и нужно будет передать кому-то другому.
-				img(src="img/article/article_main.jpg").float-right.full-article__image
+				img(src="img/article/article_main.jpg" alt="Фото статьи").float-right.full-article__image
 			.ngl-article__block.clearfix
+				p.similar-head Похожие по теме:
 				ul.ngl-news.similar.float-left
-					p.head Похожие по теме:
 						li(class='ngl-news__item')
 							.similar__header
 								.ngl-news__picture
-									img(src='img/similar/similar_1.jpg' alt='')
+									img(src='img/similar/similar_1.jpg' alt='Фото статьи')
 								p.heading Как нашли меня через таргетинговую рекламу в соцсетях
 							.similar__footer
 								p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
@@ -40,7 +59,7 @@ section.ngl-article.full-article
 						li(class='ngl-news__item')
 							.similar__header
 								.ngl-news__picture
-									img(src='img/similar/similar_2.jpg' alt='')
+									img(src='img/similar/similar_2.jpg' alt='Фото статьи')
 								p.heading Создание lamp и mean-среды у себя дома с помощью devilbox
 							.similar__footer
 								p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
@@ -70,7 +89,7 @@ section.ngl-article.full-article
 
 						li Хотел остановиться на 13, но позволю еще один. Субъективно. По моему опыту при прочих равных условиях, лучшие разработчики – старше 30 лет, больше опыта, обычно больше дисциплины. Женщина-разработчик – огромная удача. Отбросьте стереотипы. Она гораздо больше мотивирована и она как правило действительно любит свою работу. И она точно не идет по пути наименьшего сопротивления или следует какой-то моде.
 			.ngl-article__full-picture
-				img(src="img/article/article_full.jpg")
+				img(src="img/article/article_full.jpg" alt="Фото статьи")
 			ul
 				li Если техническое задание писали не вы, а другой человек – прочтите, задайте столько вопросов, сколько нужно.
 				li Ни в коем случае не связывайтесь с программистом, который работает без технического задания. Он или новичок, или расчитывает на легкий заработок. Если работа окажется чуть сложнее чем он ожидал, он просто прекратит работу, а без технического задания вы никак не сможете выставить претензию или привлечь к ответственности (незаконные способы мы не рассматриваем)

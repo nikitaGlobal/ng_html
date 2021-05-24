@@ -1,9 +1,28 @@
-section.ngl-breadcrumbs
+.ngl-breadcrumbs
 	.container
-		.ngl-breadcrumbs__pagination
-			a(href="#") Главная
-			a(href="#") Как заказывать сайт программисту
-section.ngl-article
+		ul.ngl-breadcrumbs__pagination(itemscope itemtype="https://schema.org/BreadcrumbList")
+			li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+				a(href="/" itemprop="item")
+					span(itemprop="name") Главная
+					meta(itemprop="position" content="0")
+			li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+				a(href="#" itemprop="item")
+					span(itemprop="name") Как заказывать сайт программисту
+					meta(itemprop="position" content="1")
+section.ngl-article(itemscope itemtype="https://schema.org/Article")
+	link(itemprop='mainEntityOfPage' href='/')
+	link(itemprop='image' href='image')
+	meta(itemprop='headline name' content='Как нашли меня через таргетинговую рекламу в соцсетях')
+	meta(itemprop='description' content='Сергей Чернухин, один из моих заказчиков, опубликовал в своем блоге zakazsajta.ru пост о том как он искал разработчика для WordPress и нашел меня.')
+	meta(itemprop="author" content="Никита Меншутин")
+	meta(itemprop="datePublished" datetime="2021-05-02" content="2021-05-02")
+	meta(itemprop="dateModified" datetime="2021-05-02" content="2021-05-02")
+	div(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+		div(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+			img(itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;")
+		meta(itemprop="name" content="Nikita Global")
+		meta(itemprop="telephone" content="")
+		meta(itemprop="address" content="Россия")
 	.container
 		.content-zone
 			h3 Как нашли меня через таргетинговую рекламу в соцсетях

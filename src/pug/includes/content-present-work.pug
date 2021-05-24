@@ -1,21 +1,31 @@
-section.ngl-breadcrumbs
+.ngl-breadcrumbs
 	.container
 		.ngl-breadcrumbs__head
-			.ngl-breadcrumbs__pagination
-				a(href="#") Мои Работы
-				a(href="#") Сайт “Шоколадные конфеты ручной работы”
+			ul.ngl-breadcrumbs__pagination(itemscope itemtype="https://schema.org/BreadcrumbList")
+				li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+					a(href="/works.html" itemprop="item")
+						span(itemprop="name") Мои Работы
+						meta(itemprop="position" content="0")
+				li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+					a(href="#" itemprop="item")
+						span(itemprop="name") Сайт “Шоколадные конфеты ручной работы”
+						meta(itemprop="position" content="1")
 			p.ngl-tag.text #програмист#фриланс#оплата
 section.present-work
 	.container
 		.present-work__inner
 			.present-work__block
-				.present-work__preview
-					img(src="img/present-work/present-work_1.jpg")
-				.present-work__secondary
-					img(src="img/present-work/present-work_2.jpg")
+				.present-work__preview(itemscope itemtype="http://schema.org/ImageObject")
+					meta(itemprop="name" content="Работа")
+					meta(itemprop="description" content="Работа в портфолио")
+					img(src="img/present-work/present-work_1.jpg" alt="Шоколадные конфеты ручной работы")
+				.present-work__secondary(itemscope itemtype="http://schema.org/ImageObject")
+					img(src="img/present-work/present-work_2.jpg" alt="Шоколадные конфеты ручной работы")
 					a.present-work__more(href="#")
+						meta(itemprop="name" content="Работа")
+						meta(itemprop="description" content="Работа в портфолио")
 						span.present-work__quantity 4
-						img(src="img/present-work/present-work_3.jpg")
+						img(src="img/present-work/present-work_3.jpg" alt="Шоколадные конфеты ручной работы")
 			.present-work__block
 				h3 Сайт "Шоколадные конфеты ручной работы"
 				p.text Сайт-каталог с формами обратной связи и формой заказа товаров.

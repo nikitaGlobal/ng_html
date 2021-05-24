@@ -1,5 +1,4 @@
 @import "import/reset";
-@import "import/fonts";
 
 
 // Vars
@@ -1016,6 +1015,7 @@ label {
 		display: block;
 		border: 1px solid #FFFFFF;
 		padding: 11px 37px;
+		height: 100%;
 		@media screen and (max-width: $md) {
 			padding: 10px 20px;
 		}
@@ -1499,13 +1499,14 @@ h3 {
 		}
 	}
 
-	.head {
+}
+
+.ngl-article__block .similar-head {
 		font-weight: 500;
 		font-size: 20px;
 		line-height: 23px;
 		margin-bottom: 34px;
 	}
-}
 
 .ngl-article__full-picture {
 	margin-top: 45px;

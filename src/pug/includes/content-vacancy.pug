@@ -1,15 +1,15 @@
-section.vacancies
+.vacancies
 	.container
 		.vacancies__inner
-			aside.sidebar
+			aside.sidebar(itemscope itemtype="http://schema.org/WPSideBar")
 				h2.title Вакансии
 				p.sidebar__heading Категории:
 				.sidebar__links
-					a(href="#") Верстка
-					a.active(href="#") Верстка
-					a(href="#") Верстка
-					a(href="#") Верстка
-					a(href="#") Верстка
+					a(href="#" itemprop="name") Верстка
+					a.active(href="#" itemprop="name") Верстка
+					a(href="#" itemprop="name") Верстка
+					a(href="#" itemprop="name") Верстка
+					a(href="#" itemprop="name") Верстка
 			.vacancies__main
 				form.vacancies__search
 					input.field(type="text")

@@ -1,16 +1,35 @@
-section.ngl-breadcrumbs
+.ngl-breadcrumbs
 	.container
-		.ngl-breadcrumbs__pagination
-			a(href="#") Главная
-			a(href="#") Как заказывать сайт программисту
+		ul.ngl-breadcrumbs__pagination(itemscope itemtype="https://schema.org/BreadcrumbList")
+			li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+				a(href="/" itemprop="item")
+					span(itemprop="name") Главная
+					meta(itemprop="position" content="0")
+			li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+				a(href="#" itemprop="item")
+					span(itemprop="name") Как заказывать сайт программисту
+					meta(itemprop="position" content="1")
 section.content-zone.about-work
 	.container
-		.content-zone__inner.clearfix
+		.content-zone__inner.clearfix(itemscope itemtype="https://schema.org/Article")
+			link(itemprop="mainEntityOfPage" href="/")
+			link(itemprop="image" href="image")
+			meta(itemprop="headline name" content="Как заказывать сайт программисту") 
+			meta(itemprop="description" content="О том, как правильно заказывать сайт программисту на фрилансе или подобных биржах")
+			meta(itemprop="author" content="Никита Меншутин")
+			meta(itemprop="datePublished" datetime="2021-05-24" content="2021-05-24")
+			meta(itemprop="dateModified" datetime="2021-05-24" content="2021-05-24")
+			div(itemprop="publisher" itemscope itemtype="https://schema.org/Organization")
+				div(itemprop="logo" itemscope itemtype="https://schema.org/ImageObject")
+					img(itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;")
+				meta(itemprop="name" content="Nikita Global")
+				meta(itemprop="telephone" content="")
+				meta(itemprop="address" content="Россия")
 			h3 Как заказывать сайт программисту
 			.pictures
 				.pictures__block
 				.pictures__block
-			.content-zone__text
+			.content-zone__text(itemprop="articleBody")
 				p Если техническое задание писали не вы, а другой человек – прочтите, задайте столько вопросов, сколько нужно.
 				p Ни в коем случае не связывайтесь с программистом, который работает без технического задания. Он или новичок, или расчитывает на легкий заработок. Если работа окажется чуть сложнее чем он ожидал, он просто прекратит работу, а без технического задания вы никак не сможете выставить претензию или привлечь к ответственности (незаконные способы мы не рассматриваем)
 				p Не ставьте задачи по телефону. Потом никто не найдет концов, а если проект на месяц, то никто не вспомнит о чем именно договорились. Опять же как предыдущем пункте – при разногласиях не на что будет ссылаться.

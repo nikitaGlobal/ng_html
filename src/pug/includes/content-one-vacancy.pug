@@ -1,15 +1,26 @@
-section.vacancies
+.ngl-breadcrumbs
+	.container
+		ul.ngl-breadcrumbs__pagination(itemscope itemtype="https://schema.org/BreadcrumbList")
+			li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+				a(href="vacancy.html" itemprop="item")
+					span(itemprop="name") Вакансии
+					meta(itemprop="position" content="0")
+			li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+				a(href="#" itemprop="item")
+					span(itemprop="name") Веб-разработчик
+					meta(itemprop="position" content="1")
+.vacancies
 	.container
 		.vacancies__inner
-			aside.sidebar
+			aside.sidebar(itemscope itemtype="http://schema.org/WPSideBar")
 				h2.title Вакансии
 				p.sidebar__heading Категории:
 				.sidebar__links
-					a(href="#") Верстка
-					a.active(href="#") Верстка
-					a(href="#") Верстка
-					a(href="#") Верстка
-					a(href="#") Верстка
+					a(href="#" itemprop="name") Верстка
+					a.active(href="#" itemprop="name") Верстка
+					a(href="#" itemprop="name") Верстка
+					a(href="#" itemprop="name") Верстка
+					a(href="#" itemprop="name") Верстка
 			.vacancies__main
 				form.vacancies__search
 					input.field(type="text")

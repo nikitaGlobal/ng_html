@@ -12,8 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Mono&amp;family=Press+Start+2P&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="ngl-header">
-      <nav class="navbar navbar-expand-xl">
+    <header class="ngl-header" itemscope itemtype="http://schema.org/WPHeader">
+      <meta itemprop="headline" content="Nikita Global">
+      <meta itemprop="description" content="Меня зовут Никита Меншутин и я рад тому что вы зашли на мой сайт. Мои знания, опыт и профессиональные интересы находятся на стыке двух наук – мировой экономики и информационных технологий (IT). Это и будет основной темой сайта.">
+      <meta itemprop="keywords" content="фриланс, it, мировая экономика, информационные технологии">
+      <nav class="navbar navbar-expand-xl" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <div class="container"><a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
               <svg class="menu-open" width="35" height="20" viewbox="0 0 35 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,22 +26,26 @@
               </svg></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Мои работы</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Вакансии</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Друзья и партнеры</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Обо мне</a></li>
+              <li class="nav-item"><a class="nav-link active" href="/" itemprop="url">Главная</a></li>
+              <li class="nav-item"><a class="nav-link" href="works.html" itemprop="url">Мои работы</a></li>
+              <li class="nav-item"><a class="nav-link" href="vacancy.html" itemprop="url">Вакансии</a></li>
+              <li class="nav-item"><a class="nav-link" href="friends.html" itemprop="url">Друзья и партнеры</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html" itemprop="url">Обо мне</a></li>
             </ul>
-            <form class="ngl-search" action="sender.php">
-              <button class="ngl-search__btn" type="button">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19.7722 18.6726L14.8912 13.7917C16.1045 12.3328 16.8354 10.4593 16.8354 8.41797C16.8354 3.77628 13.0592 0 8.41776 0C3.77618 0 0 3.77628 0 8.41797C0 13.0593 3.77618 16.8353 8.41776 16.8353C10.459 16.8353 12.3326 16.1045 13.7915 14.8912L18.6726 19.7722C18.8244 19.9241 19.0234 20 19.2224 20C19.4214 20 19.6204 19.9241 19.7723 19.7722C20.076 19.4685 20.076 18.9763 19.7722 18.6726ZM1.55518 8.41797C1.55518 4.63381 4.6337 1.55518 8.41776 1.55518C12.2017 1.55518 15.2801 4.63381 15.2801 8.41797C15.2801 12.2018 12.2017 15.2801 8.41776 15.2801C4.6337 15.2801 1.55518 12.2018 1.55518 8.41797Z" fill="white"></path>
-                </svg>
-              </button>
-              <div class="ngl-search__wrap">
-                <input class="ngl-search__field" type="text" placeholder="Поиск">
-              </div>
-            </form><a class="neon-btn request-toggler" href="#">Обратиться</a>
+            <div itemscope itemtype="https://schema.org/WebSite">
+              <meta itemprop="url" content="https://nikita-global.ru">
+              <form class="ngl-search" action="sender.php" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+                <meta itemprop="target" content="https://nikita-global.ru/search/?q={query}">
+                <button class="ngl-search__btn" type="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.7722 18.6726L14.8912 13.7917C16.1045 12.3328 16.8354 10.4593 16.8354 8.41797C16.8354 3.77628 13.0592 0 8.41776 0C3.77618 0 0 3.77628 0 8.41797C0 13.0593 3.77618 16.8353 8.41776 16.8353C10.459 16.8353 12.3326 16.1045 13.7915 14.8912L18.6726 19.7722C18.8244 19.9241 19.0234 20 19.2224 20C19.4214 20 19.6204 19.9241 19.7723 19.7722C20.076 19.4685 20.076 18.9763 19.7722 18.6726ZM1.55518 8.41797C1.55518 4.63381 4.6337 1.55518 8.41776 1.55518C12.2017 1.55518 15.2801 4.63381 15.2801 8.41797C15.2801 12.2018 12.2017 15.2801 8.41776 15.2801C4.6337 15.2801 1.55518 12.2018 1.55518 8.41797Z" fill="white"></path>
+                  </svg>
+                </button>
+                <div class="ngl-search__wrap">
+                  <input class="ngl-search__field" type="text" placeholder="Поиск" itemprop="query-input" name="query" required>
+                </div>
+              </form>
+            </div><a class="neon-btn request-toggler" href="#">Обратиться</a>
             <div class="ngl-social"><a class="ngl-social__link" href="#">
                 <svg width="20" height="20">
                   <use class="default" xlink:href="css/sprite.svg#fb"></use>
@@ -65,19 +72,19 @@
       </nav>
     </header>
     <main class="main">
-      <section class="about">
+      <section class="about" itemscope itemtype="http://schema.org/Person">
         <div class="container">
           <h2 class="title">Обо мне</h2>
           <div class="about__main">
-            <div class="about__head"><img src="img/about/I-am.jpg">
+            <div class="about__head"><img src="img/about/I-am.jpg" itemprop="image" alt="Фото">
               <div class="about__details">
                 <h3>Приветствую!</h3>
                 <p>Меня зовут Никита Меншутин и я рад тому что вы зашли на мой сайт.</p>
                 <p>Мои знания, опыт и профессиональные интересы находятся на стыке двух наук – мировой экономики и информационных технологий (IT). Это и будет основной темой сайта.</p>
                 <div class="about__contacts">
                   <h4>Мои контакты:</h4>
-                  <p>9 (900) 877 65 456 </p>
-                  <p>nikita@gmail.com </p>
+                  <p itemprop="telephone">9 (900) 877 65 456 </p>
+                  <p itemprop="email">nikita@gmail.com </p>
                   <div class="ngl-social"><a class="ngl-social__link" href="#">
                       <svg width="30" height="30">
                         <use class="default" xlink:href="css/sprite.svg#fb-black"></use>
@@ -99,7 +106,7 @@
               </div>
             </div>
             <div class="about__content">
-              <div class="about__column">
+              <div class="about__column" itemprop="disambiguatingDescription">
                 <h4>Биография</h4>
                 <p>Мне 37 лет, родился я в Москве, живу в разных регионах планеты, но преимущественно в Болгарии и России.</p>
                 <p>В настоящее время я занимаюсь разработкой полного цикла (full stack) сайтов и приложений. Располагаю слаженной и проверенной за несколько лет командой дизайнеров, фронт- и бэкенд разработчиков, помимо руководства сам выступаю как разработчик.</p>
@@ -131,11 +138,11 @@
               </div>
             </div>
             <div class="author">
-              <h4>CV:</h4><a href="index.html">Nikita Global</a>
+              <h4>CV:</h4><a href="/" itemprop="url">Nikita Global</a>
             </div>
             <div class="certificates">
               <h4>Сертификаты:</h4>
-              <div class="cerificates__inner"><img src="img/about/certificate.jpg">
+              <div class="cerificates__inner"><img src="img/about/certificate.jpg" alt="Сертификат">
                 <div class="pic"></div>
                 <div class="pic"></div>
               </div>

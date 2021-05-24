@@ -1,17 +1,17 @@
-section.about
+section.about(itemscope itemtype="http://schema.org/Person")
 	.container
 		h2.title Обо мне
 		.about__main
 			.about__head
-				img(src="img/about/I-am.jpg")
+				img(src="img/about/I-am.jpg" itemprop="image" alt="Фото")
 				.about__details
 					h3 Приветствую!
 					p Меня зовут Никита Меншутин и я рад тому что вы зашли на мой сайт.
 					p Мои знания, опыт и профессиональные интересы находятся на стыке двух наук – мировой экономики и информационных технологий (IT). Это и будет основной темой сайта.
 					.about__contacts
 						h4 Мои контакты:
-						p 9 (900) 877 65 456 
-						p nikita@gmail.com 
+						p(itemprop="telephone") 9 (900) 877 65 456 
+						p(itemprop="email") nikita@gmail.com 
 						.ngl-social
 							a(href='#' class='ngl-social__link')
 								svg(width='30' height='30')
@@ -30,7 +30,7 @@ section.about
 									use(class="default" xlink:href='css/sprite.svg#telegram-black')
 									use(class="hover" xlink:href='css/sprite.svg#telegram-hover')
 			.about__content
-				.about__column
+				.about__column(itemprop="disambiguatingDescription")
 					h4 Биография
 					p Мне 37 лет, родился я в Москве, живу в разных регионах планеты, но преимущественно в Болгарии и России.
 					p В настоящее время я занимаюсь разработкой полного цикла (full stack) сайтов и приложений. Располагаю слаженной и проверенной за несколько лет командой дизайнеров, фронт- и бэкенд разработчиков, помимо руководства сам выступаю как разработчик.
@@ -56,11 +56,11 @@ section.about
 					p Люблю путешествовать, посетил уже около 25 стран. Временами пишу статьи для разных СМИ, подробнее здесь.
 			.author
 				h4 CV:
-				a(href="index.html") Nikita Global
+				a(href="/" itemprop="url") Nikita Global
 			.certificates
 				h4 Сертификаты:
 				.cerificates__inner
-					img(src="img/about/certificate.jpg")
+					img(src="img/about/certificate.jpg" alt="Сертификат")
 					.pic
 					.pic
 
