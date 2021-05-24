@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Блог</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
-    <link rel="stylesheet" href="libs/selectric/selectric.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -76,7 +75,20 @@
         <div class="container">
           <h2 class="title">IT+Экономика</h2>
           <ul class="ngl-news">
-            <li class="ngl-news__item">
+            <li class="ngl-news__item" itemscope itemtype="https://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="/">
+              <link itemprop="image" href="image">
+              <meta itemprop="headline name" content="Как нашли меня через таргетинговую рекламу в соцсетях">
+              <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+              <meta itemprop="author" content="Никита Меншутин">
+              <meta itemprop="datePublished" datetime="2021-04-22" content="2021-04-22">
+              <meta itemprop="dateModified" datetime="2021-04-22" content="2021-04-22">
+              <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;"></div>
+                <meta itemprop="name" content="Nikita Global">
+                <meta itemprop="telephone" content="">
+                <meta itemprop="address" content="Россия">
+              </div>
               <div class="ngl-news__date text"><span>22</span>/04</div>
               <p class="ngl-news__picture">Как нашли меня через таргетинговую рекламу в соцсетях</p>
               <div class="ngl-news__main">
@@ -91,9 +103,22 @@
                 </div>
               </div>
             </li>
-            <li class="ngl-news__item">
+            <li class="ngl-news__item" itemscope itemtype="https://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="/">
+              <link itemprop="image" href="img/news/news_1.jpg">
+              <meta itemprop="headline name" content="Как нашли меня через таргетинговую рекламу в соцсетях">
+              <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+              <meta itemprop="author" content="Никита Меншутин">
+              <meta itemprop="datePublished" datetime="2021-04-22" content="2021-04-22">
+              <meta itemprop="dateModified" datetime="2021-04-22" content="2021-04-22">
+              <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;"></div>
+                <meta itemprop="name" content="Nikita Global">
+                <meta itemprop="telephone" content="">
+                <meta itemprop="address" content="Россия">
+              </div>
               <div class="ngl-news__date text"><span>22</span>/04</div>
-              <div class="ngl-news__picture"><img src="img/news/news_1.jpg" alt=""></div>
+              <div class="ngl-news__picture"><img src="img/news/news_1.jpg" alt="" loading="lazy"></div>
               <div class="ngl-news__main">
                 <p class="subtitle">Как нашли меня через таргетинговую рекламу в соцсетях</p>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -106,9 +131,22 @@
                 </div>
               </div>
             </li>
-            <li class="ngl-news__item">
+            <li class="ngl-news__item" itemscope itemtype="https://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="/">
+              <link itemprop="image" href="img/news/news_2.jpg">
+              <meta itemprop="headline name" content="Создание lamp и mean-среды у себя дома с помошью devilbox">
+              <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+              <meta itemprop="author" content="Никита Меншутин">
+              <meta itemprop="datePublished" datetime="2021-04-22" content="2021-04-22">
+              <meta itemprop="dateModified" datetime="2021-04-22" content="2021-04-22">
+              <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;"></div>
+                <meta itemprop="name" content="Nikita Global">
+                <meta itemprop="telephone" content="">
+                <meta itemprop="address" content="Россия">
+              </div>
               <div class="ngl-news__date text"><span>22</span>/04</div>
-              <div class="ngl-news__picture"><img src="img/news/news_2.jpg" alt=""></div>
+              <div class="ngl-news__picture"><img src="img/news/news_2.jpg" alt="" loading="lazy"></div>
               <div class="ngl-news__main">
                 <p class="subtitle">Создание lamp и mean-среды у себя дома с помошью devilbox</p>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -121,9 +159,22 @@
                 </div>
               </div>
             </li>
-            <li class="ngl-news__item">
+            <li class="ngl-news__item" itemscope itemtype="https://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="/">
+              <link itemprop="image" href="img/news/news_3.jpg">
+              <meta itemprop="headline name" content="Проблемы на сайте bitbucket.org">
+              <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+              <meta itemprop="author" content="Никита Меншутин">
+              <meta itemprop="datePublished" datetime="2021-04-22" content="2021-04-22">
+              <meta itemprop="dateModified" datetime="2021-04-22" content="2021-04-22">
+              <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;"></div>
+                <meta itemprop="name" content="Nikita Global">
+                <meta itemprop="telephone" content="">
+                <meta itemprop="address" content="Россия">
+              </div>
               <div class="ngl-news__date text"><span>22</span>/04</div>
-              <div class="ngl-news__picture"><img src="img/news/news_3.jpg" alt=""></div>
+              <div class="ngl-news__picture"><img src="img/news/news_3.jpg" alt="" loading="lazy"></div>
               <div class="ngl-news__main">
                 <p class="subtitle">Проблемы на сайте bitbucket.org</p>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -136,9 +187,22 @@
                 </div>
               </div>
             </li>
-            <li class="ngl-news__item">
+            <li class="ngl-news__item" itemscope itemtype="https://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="/">
+              <link itemprop="image" href="img/news/news_4.jpg">
+              <meta itemprop="headline name" content="Как заказывать сайт программисту">
+              <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+              <meta itemprop="author" content="Никита Меншутин">
+              <meta itemprop="datePublished" datetime="2021-04-22" content="2021-04-22">
+              <meta itemprop="dateModified" datetime="2021-04-22" content="2021-04-22">
+              <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;"></div>
+                <meta itemprop="name" content="Nikita Global">
+                <meta itemprop="telephone" content="">
+                <meta itemprop="address" content="Россия">
+              </div>
               <div class="ngl-news__date text"><span>22</span>/04</div>
-              <div class="ngl-news__picture"><img src="img/news/news_4.jpg" alt=""></div>
+              <div class="ngl-news__picture"><img src="img/news/news_4.jpg" alt="" loading="lazy"></div>
               <div class="ngl-news__main">
                 <p class="subtitle">Как заказывать сайт программисту</p>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -151,9 +215,22 @@
                 </div>
               </div>
             </li>
-            <li class="ngl-news__item">
+            <li class="ngl-news__item" itemscope itemtype="https://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="/">
+              <link itemprop="image" href="img/news/news_5.jpg">
+              <meta itemprop="headline name" content="Про современные мобильные телефоны и не только">
+              <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+              <meta itemprop="author" content="Никита Меншутин">
+              <meta itemprop="datePublished" datetime="2021-04-22" content="2021-04-22">
+              <meta itemprop="dateModified" datetime="2021-04-22" content="2021-04-22">
+              <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;"></div>
+                <meta itemprop="name" content="Nikita Global">
+                <meta itemprop="telephone" content="">
+                <meta itemprop="address" content="Россия">
+              </div>
               <div class="ngl-news__date text"><span>22</span>/04</div>
-              <div class="ngl-news__picture"><img src="img/news/news_5.jpg" alt=""></div>
+              <div class="ngl-news__picture"><img src="img/news/news_5.jpg" alt="" loading="lazy"></div>
               <div class="ngl-news__main">
                 <p class="subtitle">Про современные мобильные телефоны и не только</p>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -166,9 +243,22 @@
                 </div>
               </div>
             </li>
-            <li class="ngl-news__item">
+            <li class="ngl-news__item" itemscope itemtype="https://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="/">
+              <link itemprop="image" href="img/news/news_6.jpg">
+              <meta itemprop="headline name" content="Не про IT. Обзор стеклянных фляг фирмы Equa">
+              <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+              <meta itemprop="author" content="Никита Меншутин">
+              <meta itemprop="datePublished" datetime="2021-04-22" content="2021-04-22">
+              <meta itemprop="dateModified" datetime="2021-04-22" content="2021-04-22">
+              <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;"></div>
+                <meta itemprop="name" content="Nikita Global">
+                <meta itemprop="telephone" content="">
+                <meta itemprop="address" content="Россия">
+              </div>
               <div class="ngl-news__date text"><span>22</span>/04</div>
-              <div class="ngl-news__picture"><img src="img/news/news_6.jpg" alt=""></div>
+              <div class="ngl-news__picture"><img src="img/news/news_6.jpg" alt="" loading="lazy"></div>
               <div class="ngl-news__main">
                 <p class="subtitle">Не про IT. Обзор стеклянных фляг фирмы Equa</p>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -181,9 +271,22 @@
                 </div>
               </div>
             </li>
-            <li class="ngl-news__item">
+            <li class="ngl-news__item" itemscope itemtype="https://schema.org/Article">
+              <link itemprop="mainEntityOfPage" href="/">
+              <link itemprop="image" href="img/news/news_7.jpg">
+              <meta itemprop="headline name" content="Про технику и привычки.">
+              <meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+              <meta itemprop="author" content="Никита Меншутин">
+              <meta itemprop="datePublished" datetime="2021-04-22" content="2021-04-22">
+              <meta itemprop="dateModified" datetime="2021-04-22" content="2021-04-22">
+              <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img itemprop="url image" src="img/logo.png" alt="Nikita Global" title="Nikita Global" style="display:none;"></div>
+                <meta itemprop="name" content="Nikita Global">
+                <meta itemprop="telephone" content="">
+                <meta itemprop="address" content="Россия">
+              </div>
               <div class="ngl-news__date text"><span>22</span>/04</div>
-              <div class="ngl-news__picture"><img src="img/news/news_7.jpg" alt=""></div>
+              <div class="ngl-news__picture"><img src="img/news/news_7.jpg" alt="" loading="lazy"></div>
               <div class="ngl-news__main">
                 <p class="subtitle">Про технику и привычки.</p>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -274,7 +377,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
-    <script src="libs/selectric/jquery.selectric.min.js"></script>
     <script src="js/common.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
   </body>
