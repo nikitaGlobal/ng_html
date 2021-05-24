@@ -6,9 +6,9 @@
     <title>Запись</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightzoom.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&amp;family=Press+Start+2P&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
   </head>
   <body>
     <header class="ngl-header" itemscope itemtype="http://schema.org/WPHeader">
@@ -108,14 +108,14 @@
                   <li>Обезопасьте себя с помощью служб “Сделка без риска”, “Арбитраж сделки” и подобных – это все несложно, есть у многих платежных систем и на фриланс биржах. Также есть как самостоятельная услуга в интернете. В англоязычном интернете эта услуга называется “Escrow”, в “традиционных” сделках эта форма оплаты называется “аккредитив”. Работайте по предоплате, если уже сформировались деловые отношения, хотя все же лучше продолжать через сделку без риска.</li>
                   <li>Сроки – закладывайте с запасом. Проблема многих программистов, особенно тех, кто работает удаленно – неправильное определение сроков. Может случиться форсмажор, можно что-то не учесть. в конце концов исполнитель может подвести и нужно будет передать кому-то другому.</li>
                 </ol>
-              </div><img class="float-right full-article__image" src="img/article/article_main.jpg" alt="Фото статьи" loading="lazy">
+              </div><img class="float-right lazy full-article__image" src="img/article/article_main.jpg" alt="Фото статьи">
             </div>
             <div class="ngl-article__block clearfix">
               <p class="similar-head">Похожие по теме:</p>
               <ul class="ngl-news similar float-left">
                 <li class="ngl-news__item">
                   <div class="similar__header">
-                    <div class="ngl-news__picture"><img src="img/similar/similar_1.jpg" alt="Фото статьи" loading="lazy"></div>
+                    <div class="ngl-news__picture"><img class="lazy" src="img/similar/similar_1.jpg" alt="Фото статьи"></div>
                     <p class="heading">Как нашли меня через таргетинговую рекламу в соцсетях</p>
                   </div>
                   <div class="similar__footer">
@@ -128,7 +128,7 @@
                 </li>
                 <li class="ngl-news__item">
                   <div class="similar__header">
-                    <div class="ngl-news__picture"><img src="img/similar/similar_2.jpg" alt="Фото статьи" loading="lazy"></div>
+                    <div class="ngl-news__picture"><img class="lazy" src="img/similar/similar_2.jpg" alt="Фото статьи"></div>
                     <p class="heading">Создание lamp и mean-среды у себя дома с помощью devilbox</p>
                   </div>
                   <div class="similar__footer">
@@ -154,7 +154,7 @@
                 </ol>
               </div>
             </div>
-            <div class="ngl-article__full-picture"><img src="img/article/article_full.jpg" alt="Фото статьи" loading="lazy"></div>
+            <div class="ngl-article__full-picture"><img class="lazy" src="img/article/article_full.jpg" alt="Фото статьи"></div>
             <ul>
               <li>Если техническое задание писали не вы, а другой человек – прочтите, задайте столько вопросов, сколько нужно.</li>
               <li>Ни в коем случае не связывайтесь с программистом, который работает без технического задания. Он или новичок, или расчитывает на легкий заработок. Если работа окажется чуть сложнее чем он ожидал, он просто прекратит работу, а без технического задания вы никак не сможете выставить претензию или привлечь к ответственности (незаконные способы мы не рассматриваем)</li>
@@ -257,6 +257,8 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/lightzoom.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -80,5 +80,11 @@ $(document).ready(function () {
 
   $(document).find('svg').addClass('svg-icon')
 
+// Lightzoom
 
+$('.lightzoom').lightzoom({speed: 400, isOverlayClickClosing: true});
+
+// Lazy
+
+$('.lazy').lazy();
 });

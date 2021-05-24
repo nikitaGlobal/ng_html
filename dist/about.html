@@ -6,9 +6,9 @@
     <title>Обо  мне</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightzoom.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&amp;family=Press+Start+2P&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
   </head>
   <body>
     <header class="ngl-header" itemscope itemtype="http://schema.org/WPHeader">
@@ -75,7 +75,7 @@
         <div class="container">
           <h2 class="title">Обо мне</h2>
           <div class="about__main">
-            <div class="about__head"><img src="img/about/I-am.jpg" itemprop="image" alt="Фото" loading="lazy">
+            <div class="about__head"><img class="lazy" src="img/about/I-am.jpg" itemprop="image" alt="Фото">
               <div class="about__details">
                 <h3>Приветствую!</h3>
                 <p>Меня зовут Никита Меншутин и я рад тому что вы зашли на мой сайт.</p>
@@ -141,7 +141,7 @@
             </div>
             <div class="certificates">
               <h4>Сертификаты:</h4>
-              <div class="cerificates__inner"><img src="img/about/certificate.jpg" alt="Сертификат" loading="lazy">
+              <div class="cerificates__inner"><a class="lightzoom" href="img/about/certificate_2.jpg"><img class="lazy" src="img/about/certificate.jpg" alt="Сертификат"></a>
                 <div class="pic"></div>
                 <div class="pic"></div>
               </div>
@@ -210,6 +210,8 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/lightzoom.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

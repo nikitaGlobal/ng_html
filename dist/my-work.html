@@ -6,9 +6,9 @@
     <title>Фото работы</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightzoom.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&amp;family=Press+Start+2P&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
   </head>
   <body>
     <header class="ngl-header" itemscope itemtype="http://schema.org/WPHeader">
@@ -83,9 +83,9 @@
         <div class="container">
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img/present-work/my-work.jpg" alt="Работа" loading="lazy"></div>
-              <div class="swiper-slide"><img src="img/present-work/my-work.jpg" alt="Работа" loading="lazy"></div>
-              <div class="swiper-slide"><img src="img/present-work/my-work.jpg" alt="Работа" loading="lazy"></div>
+              <div class="swiper-slide"><img class="lazy" src="img/present-work/my-work.jpg" alt="Работа"></div>
+              <div class="swiper-slide"><img class="lazy" src="img/present-work/my-work.jpg" alt="Работа"></div>
+              <div class="swiper-slide"><img class="lazy" src="img/present-work/my-work.jpg" alt="Работа"></div>
             </div>
             <div class="swiper-button-next">
               <svg width="40" height="40">
@@ -161,6 +161,8 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/lightzoom.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -6,9 +6,9 @@
     <title>Презентация работы</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lightzoom.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&amp;family=Press+Start+2P&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
   </head>
   <body>
     <header class="ngl-header" itemscope itemtype="http://schema.org/WPHeader">
@@ -90,11 +90,11 @@
             <div class="present-work__block">
               <div class="present-work__preview" itemscope itemtype="http://schema.org/ImageObject">
                 <meta itemprop="name" content="Работа">
-                <meta itemprop="description" content="Работа в портфолио"><img src="img/present-work/present-work_1.jpg" alt="Шоколадные конфеты ручной работы" loading="lazy">
+                <meta itemprop="description" content="Работа в портфолио"><img class="lazy" src="img/present-work/present-work_1.jpg" alt="Шоколадные конфеты ручной работы">
               </div>
-              <div class="present-work__secondary" itemscope itemtype="http://schema.org/ImageObject"><img src="img/present-work/present-work_2.jpg" alt="Шоколадные конфеты ручной работы" loading="lazy"><a class="present-work__more" href="#">
+              <div class="present-work__secondary" itemscope itemtype="http://schema.org/ImageObject"><img class="lazy" src="img/present-work/present-work_2.jpg" alt="Шоколадные конфеты ручной работы"><a class="present-work__more" href="#">
                   <meta itemprop="name" content="Работа">
-                  <meta itemprop="description" content="Работа в портфолио"><span class="present-work__quantity">4</span><img src="img/present-work/present-work_3.jpg" alt="Шоколадные конфеты ручной работы" loading="lazy"></a></div>
+                  <meta itemprop="description" content="Работа в портфолио"><span class="present-work__quantity">4</span><img class="lazy" src="img/present-work/present-work_3.jpg" alt="Шоколадные конфеты ручной работы"></a></div>
             </div>
             <div class="present-work__block">
               <h3>Сайт "Шоколадные конфеты ручной работы"</h3>
@@ -164,6 +164,8 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/lightzoom.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
