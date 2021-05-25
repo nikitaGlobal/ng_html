@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -1318,6 +1319,7 @@ label {
 
 .works-list li {
   height: 400px;
+  position: relative;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1326,8 +1328,48 @@ label {
   }
 }
 
+.works-list li:nth-child(2) a:after {
+  content: 'САЙТ "ШОКОЛАДНЫЕ КОНФЕТЫ РУЧНОЙ РАБОТЫ"';
+}
+
 .works-list a {
   display: block;
+}
+
+.works-list a:after {
+  content: 'ВЕБ-ПРИЛОЖЕНИЕ "ВИКТОРИНА"';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
+  color: black;
+  padding: 0 75px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background: rgba(255, 255, 255, 0.77);
+}
+
+.works-list a:hover:after {
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -1366,6 +1408,11 @@ label {
   .ngl-breadcrumbs__pagination a {
     padding: 10px 20px;
   }
+}
+
+.ngl-breadcrumbs__pagination a:hover {
+  color: black;
+  background: white;
 }
 
 @media screen and (max-width: 991px) {

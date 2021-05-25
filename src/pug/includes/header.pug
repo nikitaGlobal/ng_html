@@ -15,15 +15,15 @@ header.ngl-header(itemscope itemtype="http://schema.org/WPHeader")
 			#navbarSupportedContent.collapse.navbar-collapse
 				ul.navbar-nav.mr-auto
 					li.nav-item
-						a.nav-link.active(href='/' itemprop="url") Главная
+						a(class=(name == "main" ? "nav-link active" : "nav-link") href='/' itemprop="url") Главная
 					li.nav-item
-						a.nav-link(href='works.html' itemprop="url") Мои работы
+						a(class=((name == "works" || name == "present-work" || name == "my-work")? "nav-link active" : "nav-link") href='works.html' itemprop="url") Мои работы
 					li.nav-item
-						a.nav-link(href='vacancy.html' itemprop="url") Вакансии
+						a(class=((name == "vacancy" || name == "one-vacancy") ? "nav-link active" : "nav-link") href='vacancy.html' itemprop="url") Вакансии
 					li.nav-item
-						a.nav-link(href='friends.html' itemprop="url") Друзья и партнеры
+						a(class=(name == "friends" ? "nav-link active" : "nav-link") href='friends.html' itemprop="url") Друзья и партнеры
 					li.nav-item
-						a.nav-link(href='about.html' itemprop="url") Обо мне
+						a(class=(name == "about" ? "nav-link active" : "nav-link") href='about.html' itemprop="url") Обо мне
 				div(itemscope itemtype="https://schema.org/WebSite")
 					meta(itemprop="url" content="https://nikita-global.ru")
 					form.ngl-search(action='sender.php' itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction")

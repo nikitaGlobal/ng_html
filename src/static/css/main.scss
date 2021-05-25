@@ -980,13 +980,53 @@ label {
 
 	li {
 		height: 400px;
+		position: relative;
 		@media screen and (max-width: $lg) {
 			height: auto;
+		}
+
+
+
+		
+
+		&:nth-child(2) {
+			a {
+				&:after {
+					content: 'САЙТ "ШОКОЛАДНЫЕ КОНФЕТЫ РУЧНОЙ РАБОТЫ"';
+				}
+
+			}
+			
 		}
 	}
 
 	a {
 		display: block;
+
+		&:after {
+			content: 'ВЕБ-ПРИЛОЖЕНИЕ "ВИКТОРИНА"';
+			display: flex;
+			opacity: 0;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-weight: 900;
+			font-size: 30px;
+			line-height: 35px;
+			color: black;
+			padding: 0 75px;
+			transition: all 0.2s linear;
+			background: rgba(255, 255, 255, 0.77);
+		}
+
+		&:hover:after {
+			opacity: 1;
+		}
 		
 	}
 
@@ -1018,6 +1058,11 @@ label {
 		height: 100%;
 		@media screen and (max-width: $md) {
 			padding: 10px 20px;
+		}
+
+		&:hover {
+			color: black;
+			background: white;
 		}
 	}
 
@@ -1502,11 +1547,11 @@ h3 {
 }
 
 .ngl-article__block .similar-head {
-		font-weight: 500;
-		font-size: 20px;
-		line-height: 23px;
-		margin-bottom: 34px;
-	}
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	margin-bottom: 34px;
+}
 
 .ngl-article__full-picture {
 	margin-top: 45px;
