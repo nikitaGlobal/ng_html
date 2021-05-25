@@ -201,6 +201,11 @@ dl, ol, ul {
 .navbar-brand {
   margin: 0;
   padding: 0;
+  width: 132px;
+  height: 73px;
+  background-image: url("../img/logo.svg");
+  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .nav-link {
