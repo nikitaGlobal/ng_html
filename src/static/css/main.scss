@@ -124,6 +124,12 @@ dl, ol, ul {
 .navbar-brand {
 	margin: 0;
 	padding: 0;
+	width: 132px;
+	height: 73px;
+	background-image: url('../img/logo.svg');
+	background-size:100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
 
 .nav-link {
